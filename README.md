@@ -1,2 +1,3 @@
 # homelab
-Scripts to manage my home lab
+Scripts to manage my home lab.
+
