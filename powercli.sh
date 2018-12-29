@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo docker run --rm -it vmware/powerclicore 
+docker run --rm -it vmware/powerclicore 
