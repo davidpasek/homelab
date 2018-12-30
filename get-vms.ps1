@@ -1,10 +1,10 @@
-Set-PowerCLIConfiguration -Scope User -ParticipateInCEIP $true
-Set-PowerCLIConfiguration -InvalidCertificateAction ignore -confirm:$false
+Set-PowerCLIConfiguration -Scope AllUsers -ParticipateInCEIP $false -Confirm:$false | Out-Null
+Set-PowerCLIConfiguration -InvalidCertificateAction ignore -confirm:$false | Out-Null
 
 # vCenter Server configuration
 $vcenter      = "vc01.home.uw.cz"
 $vcenteruser  = "readonly"
-$vcenterpw    = "readonly"
+$vcenterpw    = "VMware1!"
 
 $vc = connect-viserver $vcenter -User $vcenteruser -Password $vcenterpw
 
